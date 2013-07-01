@@ -1,23 +1,24 @@
 package he.orientering.liveresultatobasen;
 
-import android.R;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
+import android.widget.TextView;
 
-import he.orientering.liveresultatobasen.reader.Commands;
 
 //TODO:fix error with setContentView
 //Todo: Do a graphical UI
-//todo: DO the comunicater with the server
+
 
 public class MainActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView();
-        Commands.getLastPassingCommand(12345);
+        TextView tv;
+        tv = (TextView) findViewById(R.id.TextView);
+        setContentView(R.layout.activity_main);
+
     }
 
 
